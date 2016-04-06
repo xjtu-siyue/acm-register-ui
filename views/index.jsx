@@ -103,6 +103,9 @@ var App = React.createClass({
                     }
                 }.bind(this));
     },
+    handleJump: function() {
+        window.location = 'https://github.com/xjtu-siyue';
+    },
     onSnackBarClose: function() {
         this.setState({
             snackbarOpen: false,
@@ -181,6 +184,11 @@ var App = React.createClass({
                         primary={true}
                         onTouchTap={this.submit}
                         keyboardFocused={true}
+                        />
+                    <FlatButton
+                        label="goto XJTU-siyue"
+                        secondary={true}
+                        onTouchTap={this.handleJump}
                         />
                 </CardActions>
                 <Snackbar
