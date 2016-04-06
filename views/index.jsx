@@ -75,7 +75,7 @@ var App = React.createClass({
                 snackbarMessage: 'please tell us your phone number'
             });
         else
-            superagent.post('submit')
+            superagent.post('submit.php')
                 .type('json')
                 .send({
                     name: this.state.name,
@@ -84,7 +84,7 @@ var App = React.createClass({
                     sex: this.state.sex,
                     tel: this.state.tel,
                 })
-                .end(function(res) {
+                .end(function(err, res) {
                     if (res.body.code == 0) {
                         this.setState({
                             snackbarOpen: true,
