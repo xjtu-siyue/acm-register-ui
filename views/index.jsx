@@ -127,7 +127,7 @@ var App = React.createClass({
                 </CardMedia>
                 <CardTitle
                     title="XJTU ACM/ICPC Personal Registration"
-                    subtitle="Fill the form below to regist yourself"
+                    subtitle="Fill the form below to register"
                     />
                 <CardText>
                     <TextField
